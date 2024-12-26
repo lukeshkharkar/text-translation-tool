@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Translator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Text Translation Tool</h1>
+    <div class="translator">
+      <div class="dropdown" id="input-language">
+        <button class="dropdown-button">Input Language</button>
+        <ul class="dropdown-menu">
+          <!-- Languages populated by JS -->
+        </ul>
+      </div>
+      <textarea id="input-text" placeholder="Type text here..." rows="5"></textarea>
+
+      <button id="swap-languages">Swap Languages</button>
+
+      <div class="dropdown" id="output-language">
+        <button class="dropdown-button">Output Language</button>
+        <ul class="dropdown-menu">
+          <!-- Languages populated by JS -->
+        </ul>
+      </div>
+      <textarea id="output-text" placeholder="Translated text will appear here..." rows="5" readonly></textarea>
+    </div>
+    <p>Character Count: <span id="char-count">0</span>/5000</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
